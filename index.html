@@ -212,7 +212,34 @@
             .main-card { padding: 25px; }
             .baby-photo { height: 280px; }
         }
-    </style>
+    
+        /* --- Mejora: fondo nublado y ajustes responsive --- */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: radial-gradient(ellipse at 20% 20%, rgba(255,255,255,0.9) 0 12%, transparent 40%), radial-gradient(ellipse at 80% 30%, rgba(255,255,255,0.9) 0 12%, transparent 35%), radial-gradient(ellipse at 50% 70%, rgba(255,255,255,0.88) 0 14%, transparent 40%);
+            opacity: 0.6;
+            pointer-events: none;
+            z-index: 0;
+            mix-blend-mode: screen;
+        }
+
+        .container { position: relative; z-index: 1; }
+        .main-card { position: relative; z-index: 2; }
+        .urgent-title { text-transform: none; font-size: 1.6rem; }
+        .baby-photo { height: auto; max-height: 420px; }
+
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 0 12px; }
+            .main-card { padding: 20px; border-radius: 20px; }
+            .baby-photo { height: auto; max-height: 320px; border-radius: 16px; }
+            .urgent-title { font-size: 1.4rem; text-transform: none; margin-bottom: 18px; }
+            .story-text { font-size: 1rem; }
+            .donation-card { padding: 20px; }
+            .wa-button { display:block; width:100%; padding: 14px; }
+            .transparency-box { padding: 18px; }
+        }</style>
 </head>
 <body>
 
@@ -290,5 +317,6 @@
 
 </body>
 </html>
+
 
 
