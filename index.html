@@ -228,10 +228,10 @@
             pointer-events: none;
             z-index: 0;
             mix-blend-mode: screen;
-        }
+        }\n\n        body::after {\n            content: "";\n            position: fixed;\n            inset: 0;\n            background: rgba(255,255,255,0.55); /* ajusta opacidad aquí (0.0 - 1.0) */\n            pointer-events: none;\n            z-index: 1;\n        }
 
-        .container { position: relative; z-index: 1; }
-        .main-card { position: relative; z-index: 2; }
+        .container { position: relative; z-index: 2; }
+        .main-card { position: relative; z-index: 3; }
         .urgent-title { text-transform: none; font-size: 1.6rem; }
         .baby-photo { height: auto; max-height: 420px; }
 
@@ -322,6 +322,7 @@
 
 </body>
 </html>
+
 
 
 
