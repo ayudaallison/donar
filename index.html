@@ -16,13 +16,18 @@
         }
 
         body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: var(--fondo-gradiente);
-            background-attachment: fixed;
-            color: #333;
-            line-height: 1.6;
-        }
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: url("images/fondo.webp"), var(--fondo-gradiente);
+    background-size: cover, auto;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
 
         .container {
             max-width: 680px;
@@ -317,6 +322,7 @@
 
 </body>
 </html>
+
 
 
 
