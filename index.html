@@ -144,15 +144,43 @@
         }
 
         /* Caja de Donación */
-        .donation-card {\n            background: linear-gradient(180deg, #0b0b0b 0%, #121212 100%);\n            color: #fff;\n            padding: 40px;\n            border-radius: 24px;\n            text-align: center;\n            box-shadow: 0 12px 30px rgba(0,0,0,0.5);\n        }
+        .donation-card { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 36px; }
 
-        .no-mp-badge {\n            background: #ffcc00;\n            color: #000;\n            padding: 12px;\n            border-radius: 12px;\n            font-weight: 800;\n            font-size: 0.9rem;\n            margin-bottom: 20px;\n            display: inline-block;\n        }
+        .no-mp-badge {
+            background: #ffcc00;
+            color: #000;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            display: block;
+        }
 
-        .bank-info {\n            background: rgba(255,255,255,0.02);\n            padding: 20px;\n            border-radius: 12px;\n            margin-bottom: 20px;\n            display: grid;\n            gap: 10px;\n            text-align:left;\n        }
+        .bank-info {
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
 
-        .bank-info span {\n            display: block;\n            font-size: 0.75rem;\n            text-transform: uppercase;\n            opacity: 0.8;\n            color: #cfcfcf;\n            margin-bottom: 4px;\n        }
+        .bank-info span {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 4px;
+        }
 
-        .bank-info strong {\n            display: block;\n            font-family: monospace;\n            font-size: 1.25rem;\n            color: #fff;\n            background: rgba(255,255,255,0.04);\n            padding: 10px 12px;\n            border-radius: 8px;\n            word-break: break-all;\n        }
+        .bank-info strong {
+            display: block;
+            font-family: monospace;
+            font-size: 1.15rem;
+            margin-bottom: 15px;
+            color: #fff;
+            word-break: break-all;
+        }
 
         .wa-button {
             display: inline-block;
@@ -213,7 +241,7 @@
             .baby-photo { height: auto; max-height: 320px; border-radius: 16px; }
             .urgent-title { font-size: 1.4rem; text-transform: none; margin-bottom: 18px; }
             .story-text { font-size: 1rem; }
-            .donation-card {\n            background: linear-gradient(180deg, #0b0b0b 0%, #121212 100%);\n            color: #fff;\n            padding: 40px;\n            border-radius: 24px;\n            text-align: center;\n            box-shadow: 0 12px 30px rgba(0,0,0,0.5);\n        }
+            .donation-card { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 36px; }
             .wa-button { display:block; width:100%; padding: 14px; }
             .transparency-box { padding: 18px; }
         }.wa-icon { width: 22px; height: 22px; display: block; fill: currentColor; }
@@ -295,7 +323,6 @@
 
 </body>
 </html>
-
 
 
 
